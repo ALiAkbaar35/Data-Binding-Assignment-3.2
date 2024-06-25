@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 600px;
+}
+
+.dialog {
+  flex-direction: column;
+  width: 500px;
+  height: 350px;
+  padding: 10px;
+  background-color: #dae5ed;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  border: 0;
+  outline: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  width: 100%;
+  color: #99d9ea;
+  height: 5%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.subcard .docCard {
+  background-color: #ebf6ff;
+  width: 100%;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  .subcard .docCard:hover {
+  cursor:auto;
+  transform: scale(1.01);
+  transition: transform 0.2s, color 0.2s;
+} */
+
+.docCard.active {
+  transform: scale(1.01);
+  transition: transform 0.2s, color 0.2s;
+}
+
+.subcard .docCard .details-card {
+  border-radius: 6px;
+  background-color: white;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.subcard .docCard .details-card .header {
+  width: 100%;
+  height: 65%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: row;
+}
+
+.subcard .docCard .details-card .header .image-wrapper {
+  width: 40%;
+  border-radius: 5px;
+}
+
+.subcard .docCard .details-card .header .image-wrapper img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.subcard .docCard .details-card .header .header-details {
+  width: 60%;
+  height: 100%;
+  padding-left: 10px;
+}
+.subcard .docCard .details-card .header .header-details .rating {
+  color: #dddddd;
+  font-size: 20px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.subcard .docCard .details-card .header .header-details .name {
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: large;
+}
+
+.subcard .docCard .details-card .header .header-details .experience {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+  gap: 3px;
+  font-size: 14px;
+}
+.subcard .docCard .details-card .header .header-details .number {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+  gap: 3px;
+  font-size: 14px;
+}
+
+.subcard .docCard .details-card .header .header-details .location {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.subcard .docCard .details-card .details {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.subcard .docCard .details-card .details .service {
+  margin-top: 5px;
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.subcard .docCard .details-card .details .service .services {
+  background-color: #cfe5f5;
+  color: #419cd2;
+  padding: 3px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 10px;
+  border-radius: 10px;
+}
+
+.subcard .docCard .details-card .details .buttons {
+  height: calc(70% - 10px);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.subcard .docCard .details-card .details .buttons .schedule {
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  width: 40%;
+  height: 90%;
+  background-color: #ff6c00;
+  color: white;
+}
+.subcard .docCard .details-card .details .buttons .profile {
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  width: 40%;
+  height: 90%;
+  background-color: #098dcc;
+  color: white;
+}
+
+.card2 {
+  display: flex;
+  width: 15%;
+  height: 600px;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.card2 .Amount {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.card2 .Amount .price {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: #11a8e9;
+}
+.card2 .Selected-Nurses {
+  margin-top: 20px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.card2 .Selected-Nurses .total-select {
+  color: #11a8e9;
+}
+
+.card2 .buttons {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 80px;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.card2 .buttons .Select-All {
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+  height: calc(50% - 2.5px);
+  background-color: #ff6c00;
+  color: white;
+}
+.subcard .docCard .details-card .details .buttons .schedule:hover,
+.subcard .docCard .details-card .details .buttons .profile:hover,
+.card2 .buttons .UnSelect-All:hover,
+.card2 .buttons .Select-All:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: transform 0.2s, color 0.2s;
+}
+.card2 .buttons .UnSelect-All {
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+  height: calc(50% - 2.5px);
+  background-color: #098dcc;
+  color: white;
+}
+
+.rating .star {
+  color: #ddd;
+}
+
+.rating .star.filled {
+  color: yellow;
+}
+
+.dialog .card {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  padding: 5px;
+}
+.dialog .card .header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 16px;
+  color: #098dcc;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dialog .card .header .left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3px;
+}
+.dialog .card .header .close {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  padding-right: 10px;
+}
+.dialog .card .header .close i:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: transform 0.2s, color 0.2s;
+}
+.dialog .card .body {
+  width: 100%;
+  height: 90%;
+}
+.dialog .card .body .schedule {
+  width: 80%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  margin: 3px auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  color: #333;
+  gap: 5px;
+  border-bottom: 1px solid #d1d6dc;
+}
+
+.dialog .card .body .box {
+  width: calc(70% - 5px);
+}
+
+.dialog .card .body .box1 {
+  width: 30%;
+}
